@@ -1,3 +1,3 @@
 import { createColors } from './utils';
 
-export const colors = { ...createColors(true) };
+export const color = { ...createColors(true) };

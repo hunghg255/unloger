@@ -105,6 +105,66 @@ export type ReporterOverride = (
 ) => void;
 ```
 
+## Use color
+
+```ts
+import { color } from 'unloger/color';
+```
+
+### Types
+
+```ts
+declare const color:
+  | {
+      reset: (string: string) => string;
+      bold: (string: string) => string;
+      dim: (string: string) => string;
+      italic: (string: string) => string;
+      underline: (string: string) => string;
+      inverse: (string: string) => string;
+      hidden: (string: string) => string;
+      strikethrough: (string: string) => string;
+      black: (string: string) => string;
+      red: (string: string) => string;
+      green: (string: string) => string;
+      yellow: (string: string) => string;
+      blue: (string: string) => string;
+      magenta: (string: string) => string;
+      cyan: (string: string) => string;
+      white: (string: string) => string;
+      gray: (string: string) => string;
+      bgBlack: (string: string) => string;
+      bgRed: (string: string) => string;
+      bgGreen: (string: string) => string;
+      bgYellow: (string: string) => string;
+      bgBlue: (string: string) => string;
+      bgMagenta: (string: string) => string;
+      bgCyan: (string: string) => string;
+      bgWhite: (string: string) => string;
+      blackBright: (string: string) => string;
+      redBright: (string: string) => string;
+      greenBright: (string: string) => string;
+      yellowBright: (string: string) => string;
+      blueBright: (string: string) => string;
+      magentaBright: (string: string) => string;
+      cyanBright: (string: string) => string;
+      whiteBright: (string: string) => string;
+      bgBlackBright: (string: string) => string;
+      bgRedBright: (string: string) => string;
+      bgGreenBright: (string: string) => string;
+      bgYellowBright: (string: string) => string;
+      bgBlueBright: (string: string) => string;
+      bgMagentaBright: (string: string) => string;
+      bgCyanBright: (string: string) => string;
+      bgWhiteBright: (string: string) => string;
+    }
+  | {
+      [x: string]: StringConstructor;
+    };
+
+export { color };
+```
+
 [api-logger-config]: #loggerconfig
 [api-reporter-levels]: #reporterlevels
 [api-reporter-override]: #reporteroverride

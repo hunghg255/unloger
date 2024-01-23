@@ -1,6 +1,6 @@
 {
   "name": "unloger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy to use logger for your node.js application",
   "scripts": {
     "build": "unbuild",
@@ -18,6 +18,28 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./color": {
+      "import": {
+        "types": "./dist/color.d.mts",
+        "default": "./dist/color.mjs"
+      },
+      "require": {
+        "types": "./dist/color.d.cts",
+        "default": "./dist/color.cjs"
+      }
+    }
+  },
   "files": [
     "dist",
     "LICENSE"
